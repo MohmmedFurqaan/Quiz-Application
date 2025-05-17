@@ -1,0 +1,349 @@
+Category,Subcategory,Question,Option 1,Option 2,Option 3,Option 4,Answer
+Software,basic,What is the output of `print(2 ** 3)`?,6,8,9,None of the above,b
+Software,basic,Which of the following is a valid Python variable name?,1variable,variable_name,variable-name,variable name,b
+Software,basic,What is the output of `print(type([]))`?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,a
+Software,basic,Which of the following is used to define a block of code in Python?,Curly braces {},Parentheses (),Indentation,Square brackets [],c
+Software,basic,What is the output of `print('Hello ' + 'World')`?,HelloWorld,Hello World,Hello+World,Error,b
+Software,basic,Which of the following is not a valid Python data type?,List,Tuple,Array,Dictionary,c
+Software,basic,What is the output of `print(bool(0))`?,TRUE,FALSE,None,Error,b
+Software,basic,Which keyword is used to define a function in Python?,function,def,func,define,b
+Software,basic,What is the output of `print(len('Python'))`?,5,6,7,Error,b
+Software,basic,Which of the following is used to create an empty set in Python?,{},set(),[],(),b
+Software,basic,What is the output of `print(10 // 3)`?,3.33,3,4,Error,b
+Software,basic,Which of the following is used to handle exceptions in Python?,try-except,catch-finally,throw-catch,error-handling,a
+Software,basic,What is the output of `print('Python'.lower())`?,python,PYTHON,Python,Error,a
+Software,basic,Which of the following is used to import a module in Python?,include,import,require,use,b
+Software,basic,What is the output of `print(5 > 3 and 2 < 4)`?,TRUE,FALSE,None,Error,a
+Software,basic,Which type of loop iterates over a sequence in Python?,for,while,do-while,loop,a
+Software,basic,What is the output of `print('Python'[1])`?,P,y,t,h,b
+Software,basic,Which of the following is immutable in Python?,List,Tuple,Dictionary,Set,b
+Software,basic,Which method adds an item to the end of a list?,append(),insert(),extend(),add(),a
+Software,basic,Which statement is used to exit a loop prematurely?,break,continue,pass,exit,a
+Software,basic,What is the output of `print(2 ** 3)`?,6,8,9,None of the above,b
+Software,basic,Which of the following is a valid Python variable name?,1variable,variable_name,variable-name,variable name,b
+Software,basic,What is the output of `print(type([]))`?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,a
+Software,basic,Which of the following is used to define a block of code in Python?,Curly braces {},Parentheses (),Indentation,Square brackets [],c
+Software,basic,What is the output of `print('Hello ' + 'World')`?,HelloWorld,Hello World,Hello+World,Error,b
+Software,basic,Which of the following is not a valid Python data type?,List,Tuple,Array,Dictionary,c
+Software,basic,What is the output of `print(bool(0))`?,TRUE,FALSE,None,Error,b
+Software,basic,Which keyword is used to define a function in Python?,function,def,func,define,b
+Software,basic,What is the output of `print(len('Python'))`?,5,6,7,Error,b
+Software,basic,Which of the following is used to create an empty set in Python?,{},set(),[],(),b
+Software,basic,What is the output of `print(10 // 3)`?,3.33,3,4,Error,b
+Software,basic,Which of the following is used to handle exceptions in Python?,try-except,catch-finally,throw-catch,error-handling,a
+Software,basic,What is the output of `print('Python'.lower())`?,python,PYTHON,Python,Error,a
+Software,basic,Which of the following is used to import a module in Python?,include,import,require,use,b
+Software,basic,What is the output of `print(5 > 3 and 2 < 4)`?,TRUE,FALSE,None,Error,a
+Software,basic,Which type of loop iterates over a sequence in Python?,for,while,do-while,loop,a
+Software,basic,What is the output of `print('Python'[1])`?,P,y,t,h,b
+Software,basic,Which of the following is immutable in Python?,List,Tuple,Dictionary,Set,b
+Software,basic,Which method adds an item to the end of a list?,append(),insert(),extend(),add(),a
+Software,basic,Which statement is used to exit a loop prematurely?,break,continue,pass,exit,a
+Software,basic,Which function is used to get user input?,input(),print(),read(),scan(),a
+Software,basic,Which of the following represents the absence of a value in Python?,null,None,NaN,0,b
+Software,basic,What is the output of `print(10 % 3)`?,3,1,0,10,b
+Software,basic,What is the output of `print(3 * 'Python')`?,PythonPythonPython,Python*Python*Python,Error,None of the above,a
+Software,basic,Which of the following is a correct way to declare a list in Python?,{1,"[1, 2, 3]",3},[1,b
+Software,basic,What is the output of `print('python'.capitalize())`?,Python,python,PYTHON,Error,a
+Software,basic,Which of the following is a mutable data type in Python?,Tuple,String,List,Integer,c
+Software,basic,Which keyword is used for defining a class in Python?,class,define,struct,object,a
+Software,basic,What is the output of `print('Python'.find('o'))`?,3,4,5,None,b
+Software,basic,Which operator is used for exponentiation in Python?,*,^,//,**,d
+Software,basic,Which function is used to remove an element from a list?,pop(),delete(),remove(),discard(),c
+Software,basic,Which of the following is a correct way to create a dictionary in Python?,[],{},(),set(),b
+Software,basic,What is the output of `print(type(True))`?,<class 'bool'>,<class 'int'>,<class 'str'>,<class 'float'>,a
+Software,basic,Which function is used to convert a string to an integer?,str(),int(),float(),convert(),b
+Software,basic,Which of the following operators is used for floor division?,/,//,%,**,b
+Software,basic,Which keyword is used to check a condition in Python?,while,if,for,condition,b
+Software,basic,What is the output of `print(list(range(5)))`?,"[0, 1, 2, 3, 4, 5]",1,2,3,a
+Software,basic,Which function is used to open a file in Python?,file(),open(),read(),write(),b
+Software,basic,Which method removes all elements from a list?,clear(),delete(),remove_all(),empty(),a
+Software,basic,Which Python module is used for handling JSON data?,csv,json,xml,data,b
+Software,basic,Which symbol is used for single-line comments in Python?,//,<!--,#,*,c
+Software,basic,What is the output of `print('Hello'.replace('l', 'x'))`?,Hexxo,Hexxoxo,Hellox,a
+Software,basic,Which function is used to convert an integer to a string?,str(),int(),string(),convert(),a
+Software,basic,Which of the following is used to check membership in a collection?,contains,in,is,in,a
+Software,basic,What is the output of `print(len([1,2,3,4,5]))`?,b
+Software,basic,Which function is used to sort a list in ascending order?,sort(),sorted(),arrange(),order(),b
+Software,basic,What is the output of `print('Python'.endswith('n'))`?,TRUE,FALSE,None,Error,a
+Software,basic,Which Python method is used to convert an object into a string representation?,repr(),str(),cast(),convert(),a
+Software,basic,Which of the following is not a valid way to declare a set?,{1,2,"{1,2,3,4}",set(),c
+Software,basic,Which function is used to reverse a list in Python?,reverse(),invert(),flip(),backward(),a
+Software,basic,What is the output of `print(2 ** 3)`?,6,8,9,None of the above,b
+Software,basic,Which of the following is a valid Python variable name?,1variable,variable_name,variable-name,variable name,b
+Software,basic,What is the output of `print(type([]))`?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,a
+Software,basic,Which of the following is used to define a block of code in Python?,Curly braces {},Parentheses (),Indentation,Square brackets [],c
+Software,basic,What is the output of `print('Hello ' + 'World')`?,HelloWorld,Hello World,Hello+World,Error,b
+Software,basic,Which of the following is not a valid Python data type?,List,Tuple,Array,Dictionary,c
+Software,basic,What is the output of `print(bool(0))`?,TRUE,FALSE,None,Error,b
+Software,basic,Which keyword is used to define a function in Python?,function,def,func,define,b
+Software,basic,What is the output of `print(len('Python'))`?,5,6,7,Error,b
+Software,basic,Which of the following is used to create an empty set in Python?,{},set(),[],(),b
+Software,basic,What is the output of `print(10 // 3)`?,3.33,3,4,Error,b
+Software,basic,Which of the following is used to handle exceptions in Python?,try-except,catch-finally,throw-catch,error-handling,a
+Software,basic,What is the output of `print('Python'.lower())`?,python,PYTHON,Python,Error,a
+Software,basic,Which of the following is used to import a module in Python?,include,import,require,use,b
+Software,basic,What is the output of `print(5 > 3 and 2 < 4)`?,TRUE,FALSE,None,Error,a
+Software,basic,Which type of loop iterates over a sequence in Python?,for,while,do-while,loop,a
+Software,basic,What is the output of `print('Python'[1])`?,P,y,t,h,b
+Software,basic,Which of the following is immutable in Python?,List,Tuple,Dictionary,Set,b
+Software,basic,Which method adds an item to the end of a list?,append(),insert(),extend(),add(),a
+Software,basic,Which statement is used to exit a loop prematurely?,break,continue,pass,exit,a
+Software,average,"Which of the following operators performs logical ""or"" in Python?",||,or,|,&,b
+Software,average,What is the output of `print('Hello'.count('l'))`?,1,2,3,4,c
+Software,average,Which function is used to find the maximum value in a list?,max(),maximum(),highest(),top(),a
+Software,average,Which Python module provides mathematical functions?,math,mathematics,calc,functions,a
+Software,average,Which method returns an uppercase version of a string?,upper(),capitalize(),title(),upcase(),a
+Software,average,What is the output of `print(bool([]))`?,TRUE,FALSE,None,Error,b
+Software,average,Which operator is used for string concatenation?,+,.,&,||,a
+Software,average,Which function converts a float number to an integer?,float(),int(),str(),convert(),b
+Software,average,Which Python module is used for generating random numbers?,random,numpy,math,statistics,a
+Software,average,Which loop structure runs at least once even if the condition is false?,for,while,do-while,loop,c
+Software,average,Which method is used to split a string into a list?,split(),divide(),slice(),partition(),a
+Software,average,What is the output of `print(len({1,2,3,4,3,b
+Software,average,Which method is used to remove a specific key from a dictionary?,del,delete(),remove(),discard(),a
+Software,average,Which keyword is used to define a lambda function in Python?,function,lambda,def,anon,b
+Software,average,Which function is used to find the minimum value in a list?,min(),minimum(),lowest(),smallest(),a
+Software,average,What is the output of `print('Python'.startswith('P'))`?,TRUE,FALSE,None,Error,a
+Software,average,Which operator is used to check equality in Python?,==,=,===,!=,a
+Software,average,Which method is used to remove whitespace from the beginning and end of a string?,strip(),trim(),remove_spaces(),clean(),a
+Software,average,Which function is used to round a floating-point number in Python?,round(),ceil(),floor(),truncate(),a
+Software,average,Which Python data type is used to store ordered collections?,List,Set,Dictionary,Tuple,a
+Software,average,Which of the following keywords is used for a conditional expression?,if,for,while,loop,a
+Software,average,Which function is used to get the ASCII value of a character?,ord(),ascii(),char(),unicode(),a
+Software,average,Which Python module provides regular expressions functionality?,regex,re,exp,match,b
+Software,average,Which operator is used for comparison in Python?,==,!=,<=,All of the above,d
+Software,average,Which method is used to convert an integer to a float?,float(),convert(),int(),str(),a
+Software,average,What is the output of `print('Python'.islower())`?,TRUE,FALSE,None,Error,b
+Software,average,Which method returns the index of an element in a list?,find(),index(),position(),search(),b
+Software,average,Which Python method is used to join elements of a list into a string?,join(),concat(),merge(),combine(),a
+Software,average,What is the output of `print(bool(''))`?,TRUE,FALSE,None,Error,b
+Software,average,Which function is used to remove duplicate elements from a list?,set(),unique(),distinct(),deduplicate(),a
+Software,average,Which loop structure runs indefinitely unless interrupted?,for,while,do-while,loop,b
+Software,average,Which method converts a tuple into a list?,list(),convert(),to_list(),cast(),a
+Software,average,Which Python function is used to check the length of a collection?,count(),size(),len(),length(),c
+Software,average,Which operator is used for modulus in Python?,%,/,//,**,a
+Software,average,Which method converts a string into lowercase?,lower(),capitalize(),smallcase(),reduce(),a
+Software,average,What is the output of `print(bool(None))`?,TRUE,FALSE,None,Error,b
+Software,average,Which function is used to check if all elements in a list are true?,all(),any(),bool(),verify(),a
+Software,average,Which of the following is used to define a set in Python?,[],(),{},set(),c
+Software,average,Which function is used to find the absolute value of a number?,abs(),absolute(),value(),positive(),a
+Software,average,Which Python data type is immutable?,List,Tuple,Dictionary,Set,b
+Software,average,Which function is used to convert a list into a tuple?,list(),convert(),tuple(),cast(),c
+Software,average,Which method removes the last element from a list?,delete(),remove(),pop(),discard(),c
+Software,average,What is the output of `print(bool('Python'))`?,TRUE,FALSE,None,Error,a
+Software,average,Which operator is used for bitwise AND in Python?,&,|,^,&&,a
+Software,average,Which function is used to check if any elements in a list are true?,all(),any(),bool(),check(),b
+Software,average,Which method converts a dictionary's keys into a list?,keys(),values(),items(),get(),a
+Software,average,Which function is used to get the square root of a number?,sqrt(),root(),square(),pow(),a
+Software,average,Which Python function creates a shallow copy of a list?,copy(),clone(),replicate(),duplicate(),a
+Software,average,Which operator is used for floor division in Python?,/,//,%,**,b
+Software,average,Which method is used to remove a specific item from a dictionary?,remove(),discard(),pop(),del(),c
+Software,average,Which method is used to convert a dictionary's values into a list?,keys(),values(),items(),get(),b
+Software,average,Which operator is used for bitwise OR in Python?,&,|,^,||,b
+Software,average,What is the output of `print(bool([]))`?,TRUE,FALSE,None,Error,b
+Software,average,Which function returns the largest integer less than or equal to a given number?,floor(),ceil(),round(),truncate(),a
+Software,average,Which of the following is used for exception handling in Python?,try-finally,try-except,throw-catch,error-handling,b
+Software,average,Which keyword is used to create a generator function?,generate,yield,return,create,b
+Software,average,Which function is used to get the length of a dictionary?,size(),len(),length(),count(),b
+Software,average,Which of the following is a valid way to create an empty dictionary?,{},set(),dict(),empty(),a
+Software,average,What is the output of `print(bool(0.0))`?,TRUE,FALSE,None,Error,b
+Software,average,Which method removes a specified key from a dictionary and returns its value?,pop(),del(),remove(),discard(),a
+Software,average,"Which of the following operators performs logical ""or"" in Python?",||,or,|,&,b
+Software,average,What is the output of `print('Hello'.count('l'))`?,1,2,3,4,b
+Software,average,Which function is used to find the maximum value in a list?,max(),maximum(),highest(),top(),a
+Software,average,Which Python module provides mathematical functions?,math,mathematics,calc,functions,a
+Software,average,Which method returns an uppercase version of a string?,upper(),capitalize(),title(),upcase(),a
+Software,average,What is the output of `print(bool([]))`?,TRUE,FALSE,None,Error,b
+Software,average,Which operator is used for string concatenation?,+,.,&,||,a
+Software,average,Which function converts a float number to an integer?,float(),int(),str(),convert(),b
+Software,average,Which Python module is used for generating random numbers?,random,numpy,math,statistics,a
+Software,average,Which loop structure runs at least once even if the condition is false?,for,while,do-while,loop,c
+Software,average,Which method is used to split a string into a list?,split(),divide(),slice(),partition(),a
+Software,average,Which method is used to remove a specific key from a dictionary?,del,delete(),remove(),discard(),a
+Software,average,"Which of the following operators performs logical ""or"" in Python?",||,or,|,&,b
+Software,average,What is the output of `print('Hello'.count('l'))`?,1,2,3,4,b
+Software,average,Which function is used to find the maximum value in a list?,max(),maximum(),highest(),top(),a
+Software,average,Which Python module provides mathematical functions?,math,mathematics,calc,functions,a
+Software,average,Which method returns an uppercase version of a string?,upper(),capitalize(),title(),upcase(),a
+Software,average,What is the output of `print(bool([]))`?,TRUE,FALSE,None,Error,b
+Software,average,Which operator is used for string concatenation?,+,.,&,||,a
+Software,average,Which function converts a float number to an integer?,float(),int(),str(),convert(),b
+Software,average,Which Python module is used for generating random numbers?,random,numpy,math,statistics,a
+Software,average,Which loop structure runs at least once even if the condition is false?,for,while,do-while,loop,c
+Software,average,Which method is used to split a string into a list?,split(),divide(),slice(),partition(),a
+Software,average,Which method is used to remove a specific key from a dictionary?,del,delete(),remove(),discard(),a
+Software,average,Which keyword is used to define a lambda function in Python?,function,lambda,def,anon,b
+Software,average,Which function is used to find the minimum value in a list?,min(),minimum(),lowest(),smallest(),a
+Software,average,What is the output of `print('Python'.startswith('P'))`?,TRUE,FALSE,None,Error,a
+Software,average,Which operator is used to check equality in Python?,==,=,===,!=,a
+Software,average,Which method is used to remove whitespace from the beginning and end of a string?,strip(),trim(),remove_spaces(),clean(),a
+Software,average,Which function is used to round a floating-point number in Python?,round(),ceil(),floor(),truncate(),a
+Software,average,Which Python data type is used to store ordered collections?,List,Set,Dictionary,Tuple,a
+Software,average,Which keyword is used to define a lambda function in Python?,function,lambda,def,anon,b
+Software,average,Which function is used to find the minimum value in a list?,min(),minimum(),lowest(),smallest(),a
+Software,average,What is the output of `print('Python'.startswith('P'))`?,TRUE,FALSE,None,Error,a
+Software,average,Which operator is used to check equality in Python?,==,=,===,!=,a
+Software,average,Which method is used to remove whitespace from the beginning and end of a string?,strip(),trim(),remove_spaces(),clean(),a
+Software,average,Which function is used to round a floating-point number in Python?,round(),ceil(),floor(),truncate(),a
+Software,average,Which Python data type is used to store ordered collections?,List,Set,Dictionary,Tuple,a
+Software,advance,Which function is used to determine whether an object is callable?,check(),callable(),invoke(),execute(),b
+Software,advance,Which operator is used for bitwise XOR in Python?,&,|,^,**,c
+Software,advance,Which of the following functions returns the hexadecimal representation of an integer?,hex(),bin(),oct(),convert(),a
+Software,advance,Which of the following functions returns the binary representation of an integer?,hex(),bin(),oct(),convert(),b
+Software,advance,Which of the following is an immutable data type in Python?,Set,List,String,Dictionary,c
+Software,advance,What is the output of `print(bool(' '))`?,TRUE,FALSE,None,Error,a
+Software,advance,Which method is used to remove leading whitespace from a string?,strip(),lstrip(),rstrip(),trim(),b
+Software,advance,Which method is used to remove trailing whitespace from a string?,strip(),lstrip(),rstrip(),trim(),c
+Software,advance,Which operator is used to check if two variables point to the same object?,==,!=,is,equals,c
+Software,advance,Which Python function returns the Unicode code of a character?,ord(),unicode(),char(),encode(),a
+Software,advance,Which function returns the octal representation of an integer?,oct(),hex(),bin(),convert(),a
+Software,advance,Which function returns the ASCII character corresponding to a given Unicode code?,ord(),ascii(),char(),chr(),d
+Software,advance,Which operator is used for logical negation in Python?,!,not,~,negate,b
+Software,advance,Which function is used to check if a string consists only of digits?,isdigit(),isnumeric(),isnumber(),isint(),a
+Software,advance,Which method converts all letters of a string into title case?,capitalize(),title(),upper(),format(),b
+Software,advance,What is the output of `print(bool(None))`?,TRUE,FALSE,None,Error,b
+Software,advance,Which method converts a string into a list of words?,split(),slice(),divide(),words(),a
+Software,advance,Which function is used to check whether a number is finite or infinite in Python?,math.isfinite(),math.isinf(),math.isnan(),math.isnum(),a
+Software,advance,What is the output of `print('Python'.isalpha())`?,TRUE,FALSE,None,Error,a
+Software,advance,Which Python module provides time-related functions?,datetime,time,date,calendar,b
+Software,advance,Which method returns the first occurrence index of a substring in a string?,index(),find(),search(),match(),b
+Software,advance,Which function is used to round a number up to the nearest integer?,ceil(),floor(),round(),truncate(),a
+Software,advance,What is the output of `print('1234'.isdigit())`?,TRUE,FALSE,None,Error,a
+Software,advance,Which function is used to generate a sequence of numbers?,sequence(),range(),list(),values(),b
+Software,advance,Which keyword is used for defining a function in Python?,function,def,func,define,b
+Software,advance,Which function returns the absolute difference between two numbers?,math.fabs(),abs(),math.absdiff(),diff(),a
+Software,advance,Which operator is used for checking identity in Python?,==,!=,is,equals,c
+Software,advance,What is the output of `print('123'.isnumeric())`?,TRUE,FALSE,None,Error,a
+Software,advance,Which Python module is used for working with regular expressions?,regex,re,exp,match,b
+Software,advance,Which method is used to format a string?,format(),replace(),modify(),stringify(),a
+Software,advance,Which function returns the sine of a number in radians?,sin(),math.sin(),trig.sin(),calculate_sin(),b
+Software,advance,Which Python module provides functions for working with time?,time,datetime,clock,timer,a
+Software,advance,Which method converts a string into uppercase?,upper(),capitalize(),bigcase(),large(),a
+Software,advance,Which function is used to calculate the factorial of a number?,fact(),math.factorial(),calculate_factorial(),factorial_value(),b
+Software,advance,Which operator is used for bitwise left shift in Python?,<<,>>,<=,>=,a
+Software,advance,Which method is used to remove duplicates from a list?,set(),unique(),distinct(),deduplicate(),a
+Software,advance,Which function checks whether a value is NaN (Not a Number)?,math.isnan(),isnan(),check_nan(),num_check(),a
+Software,advance,Which of the following functions returns the logarithm of a number?,math.log(),logarithm(),log_value(),calculate_log(),a
+Software,advance,Which function is used to return the cosine of a number in radians?,cos(),math.cos(),trig.cos(),calculate_cos(),b
+Software,advance,Which Python module is used for handling CSV files?,csv,json,xml,data,a
+Software,advance,Which operator is used for bitwise right shift in Python?,<<,>>,<=,>=,b
+Software,advance,Which function is used to truncate a float number?,truncate(),math.trunc(),floor(),round(),b
+Software,advance,Which method is used to find the index of the first occurrence of a value in a list?,search(),find(),index(),locate(),c
+Software,advance,Which function is used to return the square of a number?,pow(),square(),math.pow(),sq_value(),b
+Software,advance,Which method checks if a string contains only lowercase letters?,islower(),is_lowercase(),smallcase(),lowercase_check(),a
+Software,advance,What is the output of `print(bool('Python'))`?,TRUE,FALSE,None,Error,a
+Software,advance,Which operator is used for checking inequality in Python?,==,!=,is,equals,b
+Software,advance,Which function returns the tangent of a number in radians?,tan(),math.tan(),trig.tan(),calculate_tan(),b
+Software,advance,Which Python module provides random number generation functions?,random,numpy,math,statistics,a
+Software,advance,Which method checks if a string contains only uppercase letters?,isupper(),is_uppercase(),bigcase(),uppercase_check(),a
+Software,advance,Which function is used to convert a string to uppercase?,upper(),capitalize(),bigcase(),format(),a
+Software,advance,What is the output of `print(bool([]))`?,TRUE,FALSE,None,Error,b
+Software,advance,Which function is used to compute the remainder of division?,mod(),%,math.fmod(),rem(),c
+Software,advance,Which Python module provides advanced mathematical functions?,math,calc,advanced_math,statistics,a
+Software,advance,Which function returns the base-10 logarithm of a number?,log10(),log(),math.log10(),calculate_log(),c
+Software,advance,Which Python module provides date and time functions?,datetime,time,date,calendar,a
+Software,advance,Which function converts a string to a floating-point number?,float(),int(),convert(),str(),a
+Software,advance,Which method converts all characters in a string to lowercase?,lower(),smallcase(),format(),reduce(),a
+Software,advance,Which function rounds a floating-point number to the nearest whole number?,round(),ceil(),floor(),truncate(),a
+Software,advance,Which operator is used for logical negation?,!,not,~,negate,b
+Software,advance,Which Python module provides statistics functions?,math,statistics,data_analysis,numpy,b
+Software,advance,Which function checks if a value is infinite?,math.isinf(),isinf(),check_inf(),num_check(),a
+Software,advance,Which function checks whether a number is NaN?,math.isnan(),isnan(),check_nan(),num_check(),a
+Software,advance,Which method removes leading spaces in a string?,strip(),lstrip(),rstrip(),trim(),b
+Software,advance,Which function returns a floating-point approximation of e?,math.exp(),exp(),calculate_exp(),e_value(),a
+Software,advance,Which function returns the base-2 logarithm of a number?,math.log2(),log(),log_base2(),calculate_log(),a
+Software,advance,Which method checks if a string contains only digits?,isdigit(),isnumeric(),isnumber(),isint(),a
+Software,advance,Which function returns the hypotenuse of a right triangle given two sides?,math.hypot(),hypotenuse(),triangle_hypot(),calculate_hypot(),a
+Software,advance,Which Python module is used to parse command-line arguments?,argparse,sys,cli_parser,config_parser,a
+Software,advance,Which function converts an integer to a binary string?,bin(),binary(),int_to_bin(),convert_to_bin(),a
+Software,advance,Which function returns the complex conjugate of a complex number?,math.conj(),complex.conjugate(),conj(),cmath.conj(),d
+Software,advance,Which function is used to compute the greatest common divisor of two numbers?,math.gcd(),gcd(),common_divisor(),find_gcd(),a
+Software,advance,Which Python module allows interaction with the operating system?,sys,os,platform,system,b
+Software,advance,Which function checks if a variable is an instance of a specific class?,type(),isinstance(),check_class(),instanceof(),b
+Software,advance,Which keyword is used to inherit a class in Python?,extend,inherit,parent,class,a
+Software,advance,Which function checks whether an object is iterable?,iterable(),check_iter(),is_iterable(),next(),c
+Software,advance,Which Python function is used to check if a file exists?,os.isfile(),path.exists(),file.check(),os.path.exists(),d
+Software,advance,Which function returns the absolute difference between two numbers?,math.absdiff(),abs(),fabs(),math.fabs(),d
+Software,advance,Which Python module is used to work with file paths?,sys,os.path,files,pathlib,b
+Software,advance,Which operator is used for element-wise multiplication in NumPy arrays?,*,@,dot(),multiply(),b
+Software,advance,Which method is used to find the length of a set?,size(),count(),len(),length(),c
+Software,advance,Which keyword is used to create an anonymous function?,def,function,lambda,anon,c
+Software,advance,Which method is used to remove an element from a set?,remove(),delete(),discard(),clear(),c
+Software,advance,Which function is used to shuffle a list randomly?,random.shuffle(),shuffle(),randomize(),mix(),a
+Software,advance,Which Python module is used to parse JSON data?,json,csv,xml,data,a
+Software,advance,Which keyword is used to define a class method that operates on a class instead of an instance?,static,classmethod,classmethod(),method,b
+Software,advance,Which method converts a tuple into a list?,convert(),tuple_to_list(),list(),cast(),c
+Software,advance,Which function is used to convert a string into an integer?,int(),str(),cast(),convert(),a
+Software,advance,Which operator is used for matrix multiplication in Python?,*,@,dot(),mult(),b
+Software,advance,Which function returns the inverse tangent (arctan) of a number?,tan(),math.atan(),trig.tan(),calculate_tan(),b
+Software,advance,Which function is used to determine whether an object is callable?,check(),callable(),invoke(),execute(),b
+Software,advance,Which operator is used for bitwise XOR in Python?,&,|,^,**,c
+Software,advance,Which of the following functions returns the hexadecimal representation of an integer?,hex(),bin(),oct(),convert(),a
+Software,advance,Which of the following functions returns the binary representation of an integer?,hex(),bin(),oct(),convert(),b
+Software,advance,Which of the following is an immutable data type in Python?,Set,List,String,Dictionary,c
+Software,advance,What is the output of `print(bool(' '))`?,TRUE,FALSE,None,Error,a
+Software,advance,Which method is used to remove leading whitespace from a string?,strip(),lstrip(),rstrip(),trim(),b
+Software,advance,Which method is used to remove trailing whitespace from a string?,strip(),lstrip(),rstrip(),trim(),c
+Software,advance,Which operator is used to check if two variables point to the same object?,==,!=,is,equals,c
+Software,advance,Which Python function returns the Unicode code of a character?,ord(),unicode(),char(),encode(),a
+Software,advance,Which function is used to determine whether an object is callable?,check(),callable(),invoke(),execute(),b
+Software,advance,Which operator is used for bitwise XOR in Python?,&,|,^,**,c
+Software,advance,Which of the following functions returns the hexadecimal representation of an integer?,hex(),bin(),oct(),convert(),a
+Software,advance,Which of the following functions returns the binary representation of an integer?,hex(),bin(),oct(),convert(),b
+Software,advance,Which of the following is an immutable data type in Python?,Set,List,String,Dictionary,c
+Software,advance,What is the output of `print(bool(' '))`?,TRUE,FALSE,None,Error,a
+Software,advance,Which method is used to remove leading whitespace from a string?,strip(),lstrip(),rstrip(),trim(),b
+Software,advance,Which method is used to remove trailing whitespace from a string?,strip(),lstrip(),rstrip(),trim(),c
+Software,advance,Which operator is used to check if two variables point to the same object?,==,!=,is,equals,c
+Software,advance,Which Python function returns the Unicode code of a character?,ord(),unicode(),char(),encode(),a
+Software,advance,Which function returns the octal representation of an integer?,oct(),hex(),bin(),convert(),a
+Software,advance,Which function returns the ASCII character corresponding to a given Unicode code?,ord(),ascii(),char(),chr(),d
+Software,advance,Which operator is used for logical negation in Python?,!,not,~,negate,b
+Software,advance,Which function is used to check if a string consists only of digits?,isdigit(),isnumeric(),isnumber(),isint(),a
+Software,advance,Which method converts all letters of a string into title case?,capitalize(),title(),upper(),format(),b
+Software,advance,What is the output of `print(bool(None))`?,TRUE,FALSE,None,Error,b
+Software,advance,Which method converts a string into a list of words?,split(),slice(),divide(),words(),a
+Software,advance,Which function is used to check whether a number is finite or infinite in Python?,math.isfinite(),math.isinf(),math.isnan(),math.isnum(),a
+Software,advance,What is the output of `print('Python'.isalpha())`?,TRUE,FALSE,None,Error,a
+Software,advance,Which Python module provides time-related functions?,datetime,time,date,calendar,b
+Software,advance,Which method returns the first occurrence index of a substring in a string?,index(),find(),search(),match(),b
+Software,advance,Which function is used to round a number up to the nearest integer?,ceil(),floor(),round(),truncate(),a
+Software,advance,What is the output of `print('1234'.isdigit())`?,TRUE,FALSE,None,Error,a
+Software,advance,Which function is used to generate a sequence of numbers?,sequence(),range(),list(),values(),b
+Software,advance,Which keyword is used for defining a function in Python?,function,def,func,define,b
+Software,advance,Which function returns the absolute difference between two numbers?,math.fabs(),abs(),math.absdiff(),diff(),a
+Software,advance,Which operator is used for checking identity in Python?,==,!=,is,equals,c
+Software,advance,What is the output of `print('123'.isnumeric())`?,TRUE,FALSE,None,Error,a
+Software,advance,Which Python module is used for working with regular expressions?,regex,re,exp,match,b
+Software,advance,Which method is used to format a string?,format(),replace(),modify(),stringify(),a
+Software,advance,Which function returns the sine of a number in radians?,sin(),math.sin(),trig.sin(),calculate_sin(),b
+Software,advance,Which Python module provides functions for working with time?,time,datetime,clock,timer,a
+Software,advance,Which method converts a string into uppercase?,upper(),capitalize(),bigcase(),large(),a
+Software,advance,Which function is used to calculate the factorial of a number?,fact(),math.factorial(),calculate_factorial(),factorial_value(),b
+Software,advance,Which operator is used for bitwise left shift in Python?,<<,>>,<=,>=,a
+Software,advance,Which method is used to remove duplicates from a list?,set(),unique(),distinct(),deduplicate(),a
+Software,advance,Which function checks whether a value is NaN (Not a Number)?,math.isnan(),isnan(),check_nan(),num_check(),a
+Software,advance,Which of the following functions returns the logarithm of a number?,math.log(),logarithm(),log_value(),calculate_log(),a
+Software,advance,Which function is used to return the cosine of a number in radians?,cos(),math.cos(),trig.cos(),calculate_cos(),b
+Software,advance,Which Python module is used for handling CSV files?,csv,json,xml,data,a
+Software,advance,Which operator is used for bitwise right shift in Python?,<<,>>,<=,>=,b
+Software,advance,Which function is used to truncate a float number?,truncate(),math.trunc(),floor(),round(),b
+Software,advance,Which method is used to find the index of the first occurrence of a value in a list?,search(),find(),index(),locate(),c
+Software,advance,Which function is used to return the square of a number?,pow(),square(),math.pow(),sq_value(),b
+Software,advance,Which method checks if a string contains only lowercase letters?,islower(),is_lowercase(),smallcase(),lowercase_check(),a
+Software,advance,What is the output of `print(bool('Python'))`?,TRUE,FALSE,None,Error,a
+Software,advance,Which operator is used for checking inequality in Python?,==,!=,is,equals,b
+Software,advance,Which function returns the tangent of a number in radians?,tan(),math.tan(),trig.tan(),calculate_tan(),b
+Software,advance,Which Python module provides random number generation functions?,random,numpy,math,statistics,a
+Software,advance,Which method checks if a string contains only uppercase letters?,isupper(),is_uppercase(),bigcase(),uppercase_check(),a
+Software,advance,Which function is used to convert a string to uppercase?,upper(),capitalize(),bigcase(),format(),a
+Software,advance,What is the output of `print(bool([]))`?,TRUE,FALSE,None,Error,b
+Software,advance,Which function is used to compute the remainder of division?,mod(),%,math.fmod(),rem(),c
+Software,advance,Which Python module provides advanced mathematical functions?,math,calc,advanced_math,statistics,a
+Software,advance,Which function returns the base-10 logarithm of a number?,log10(),log(),math.log10(),calculate_log(),c
+Software,advance,Which Python module provides date and time functions?,datetime,time,date,calendar,a
+Software,advance,Which function converts a string to a floating-point number?,float(),int(),convert(),str(),a
+Software,advance,Which method converts all characters in a string to lowercase?,lower(),smallcase(),format(),reduce(),a
+Software,advance,Which function rounds a floating-point number to the nearest whole number?,round(),ceil(),floor(),truncate(),a
+Software,advance,Which operator is used for logical negation?,!,not,~,negate,b
