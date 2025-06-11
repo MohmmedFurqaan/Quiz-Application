@@ -10,16 +10,52 @@ class LoadQuestion:
             subcategory (str): Subcategory of the question
             question (str): The question text
             options (list): List of answer options
-            answer (str): Correct answer (A, B, C, or D)
+            answer (str): Correct answer (A, B, C, D or 1, 2, 3, 4)
         """
         self.category = category.strip()
         self.subcategory = subcategory.strip()
         self.question = question.strip()
         self.options = [option.strip() for option in options if option.strip()]
-        self.answer = answer.strip().upper()
+        self.answer = self._normalize_answer(answer.strip())
         
         # Validate inputs
         self._validate_question_data()
+    
+    def _normalize_answer(self, answer):
+        """
+        Normalize answer to letter format (A, B, C, D)
+        
+        Args:
+            answer (str): Answer in any format
+            
+        Returns:
+            str: Normalized answer as letter
+        """
+        answer = answer.strip().upper()
+        
+        # If it's already a letter, return as is
+        if len(answer) == 1 and answer in 'ABCD':
+            return answer
+        
+        # If it's a number, convert to letter
+        if answer.isdigit():
+            num = int(answer)
+            if 1 <= num <= 4:
+                return chr(64 + num)  # Convert 1->A, 2->B, 3->C, 4->D
+        
+        # Handle some common text answers
+        answer_mapping = {
+            'FIRST': 'A', '1ST': 'A', 'ONE': 'A',
+            'SECOND': 'B', '2ND': 'B', 'TWO': 'B',
+            'THIRD': 'C', '3RD': 'C', 'THREE': 'C',
+            'FOURTH': 'D', '4TH': 'D', 'FOUR': 'D'
+        }
+        
+        if answer in answer_mapping:
+            return answer_mapping[answer]
+        
+        # If we can't normalize it, return the original for error handling
+        return answer
     
     def _validate_question_data(self):
         """Validate question data integrity"""
@@ -40,9 +76,16 @@ class LoadQuestion:
         
         # Validate answer corresponds to available options
         max_option_index = len(self.options) - 1
-        if not (0 <= ord(self.answer) - ord('A') <= max_option_index):
-            valid_options = [chr(65 + i) for i in range(len(self.options))]
-            raise ValueError(f"Answer '{self.answer}' is not valid. Valid options: {valid_options}")
+        
+        # Check if answer is a valid letter for the number of options
+        if len(self.answer) == 1 and self.answer in 'ABCD':
+            answer_index = ord(self.answer) - ord('A')
+            if 0 <= answer_index <= max_option_index:
+                return  # Valid answer
+        
+        # If we reach here, the answer is invalid
+        valid_options = [chr(65 + i) for i in range(len(self.options))]
+        raise ValueError(f"Answer '{self.answer}' is not valid. Valid options: {valid_options}")
     
     def check_correct(self, user_answer):
         """
@@ -57,8 +100,9 @@ class LoadQuestion:
         if not user_answer:
             return False
         
-        normalized_answer = user_answer.strip().upper()
-        return normalized_answer == self.answer
+        # Normalize user answer to same format
+        normalized_user_answer = self._normalize_answer(user_answer)
+        return normalized_user_answer == self.answer
     
     def display_question(self, index=None):
         """
@@ -96,10 +140,12 @@ class LoadQuestion:
             str: Text of the selected option or empty string if invalid
         """
         try:
-            user_index = ord(user_answer.upper()) - ord('A')
+            # Normalize the user answer first
+            normalized_answer = self._normalize_answer(user_answer)
+            user_index = ord(normalized_answer) - ord('A')
             if 0 <= user_index < len(self.options):
                 return self.options[user_index]
-        except (TypeError, AttributeError):
+        except (TypeError, AttributeError, ValueError):
             pass
         return ""
     
