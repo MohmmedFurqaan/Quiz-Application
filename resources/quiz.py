@@ -115,25 +115,32 @@ class Quiz:
                 print('\nReturning to quiz setup...')
                 raise
     
-    def ask_question_with_timer(self, question, question_number):
+    def ask_question_with_timer(self, question, question_number, total_questions):
         """
         Ask a single question with timer functionality
         
         Args:
             question (LoadQuestion): Question to ask
-            question_number (int): Current question number
+            question_number (int): Current question number (1-based)
+            total_questions (int): Total number of questions
             
         Returns:
             bool: True if answered correctly, False otherwise
         """
         print(f'\n{"="*60}')
-        print(f'Question {question_number}/{self.total_questions}')
+        print(f'Question {question_number}/{total_questions}')
         print(f'Time limit: {self.time_limit} seconds')
         print(f'Category: {question.category} > {question.subcategory}')
         print("="*60)
         
-        # Display question
-        question.display_question()
+        # Display question without passing index (it was causing duplicate numbering)
+        print(f'\n{question.question}')
+        print('-' * len(question.question))
+        
+        for i, option in enumerate(question.options):
+            option_letter = chr(65 + i)  # A, B, C, D
+            print(f'{option_letter}. {option}')
+        print()  # Empty line for better readability
         
         # Get valid options for this question
         valid_options = question.get_valid_options()
@@ -158,42 +165,25 @@ class Quiz:
         print(f'Enter your answer ({valid_options_str}): ', end='', flush=True)
         
         start_time = time.time()
-        while not answer_received.is_set():
-            try:
-                # Non-blocking input with short timeout
-                import select
-                import sys
-                
-                if select.select([sys.stdin], [], [], 0.1)[0]:
-                    user_input = input().strip().upper()
-                    if user_input in valid_options:
-                        user_answer[0] = user_input
-                        answer_received.set()
-                        elapsed_time = time.time() - start_time
-                        print(f'Answer submitted in {elapsed_time:.1f} seconds')
-                        break
-                    else:
-                        print(f'Invalid option! Please enter one of: {valid_options_str}')
-                        print(f'Enter your answer ({valid_options_str}): ', end='', flush=True)
-                        
-            except (ImportError, OSError):
-                # Fallback for systems without select (like Windows)
-                try:
-                    user_input = input().strip().upper()
-                    if not answer_received.is_set():
-                        if user_input in valid_options:
-                            user_answer[0] = user_input
-                            answer_received.set()
-                            elapsed_time = time.time() - start_time
-                            print(f'Answer submitted in {elapsed_time:.1f} seconds')
-                        else:
-                            print(f'Invalid option! Please enter one of: {valid_options_str}')
-                except EOFError:
-                    break
-            except KeyboardInterrupt:
-                print('\nQuestion skipped by user.')
-                answer_received.set()
-                break
+        
+        # Simplified input handling for cross-platform compatibility
+        try:
+            user_input = input().strip().upper()
+            if not answer_received.is_set():
+                if user_input in valid_options:
+                    user_answer[0] = user_input
+                    answer_received.set()
+                    elapsed_time = time.time() - start_time
+                    print(f'Answer submitted in {elapsed_time:.1f} seconds')
+                else:
+                    print(f'Invalid option! Valid options are: {valid_options_str}')
+                    answer_received.set()
+        except KeyboardInterrupt:
+            print('\nQuestion skipped by user.')
+            answer_received.set()
+        except EOFError:
+            print('\nInput error occurred.')
+            answer_received.set()
         
         # Wait for timer thread to complete
         timer_thread.join(timeout=0.1)
@@ -296,9 +286,9 @@ class Quiz:
             
             input('\nPress Enter to begin...')
             
-            # Ask questions
+            # Ask questions - Fixed the question numbering here
             for i, question in enumerate(selected_questions):
-                if self.ask_question_with_timer(question, i + 1):
+                if self.ask_question_with_timer(question, i + 1, self.total_questions):
                     self.score += 1
                 
                 # Brief pause between questions
