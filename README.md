@@ -48,6 +48,7 @@ Technologies used in the project:
 
 *   CSV
 *   Problem Solving
+*   Python
 
 <h2>🛡️ License:</h2>
 
