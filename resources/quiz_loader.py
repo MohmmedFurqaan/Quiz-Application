@@ -33,7 +33,7 @@ class QuizLoader:
             print(f"📂 Loading questions from: {file_path}")
             
             with open(file_path, mode='r', newline='', encoding='utf-8') as file:
-                # Use csv.DictReader for better column handling
+                # Use csv.reader for better column handling
                 reader = csv.reader(file)
                 
                 # Skip header row
@@ -71,6 +71,11 @@ class QuizLoader:
                         options = [row[i].strip() for i in range(3, 7)]  # Options 1-4
                         answer = row[7].strip()
                         
+                        # Debug: Print problematic row data
+                        if not answer or len(answer) > 10:  # Suspicious answer format
+                            print(f"🔍 Row {row_number} Debug - Answer: '{answer}' (length: {len(answer)})")
+                            print(f"   Full row: {row[:8]}")  # Show first 8 columns
+                        
                         # Validate essential fields
                         if not category:
                             print(f"⚠️  Row {row_number}: Empty category. Skipping.")
@@ -97,6 +102,7 @@ class QuizLoader:
                         
                         if len(valid_options) < 2:
                             print(f"⚠️  Row {row_number}: Insufficient options ({len(valid_options)}). Skipping.")
+                            print(f"   Options found: {valid_options}")
                             skipped_rows += 1
                             continue
                         
@@ -112,12 +118,14 @@ class QuizLoader:
                         questions.append(question)
                         
                     except ValueError as ve:
-                        print(f"⚠️  Row {row_number}: Data validation error - {ve}. Skipping.")
+                        print(f"⚠️  Row {row_number}: Data validation error - {ve}")
+                        print(f"   Raw answer: '{row[7] if len(row) > 7 else 'N/A'}'")
                         skipped_rows += 1
                         continue
                     
                     except Exception as e:
-                        print(f"⚠️  Row {row_number}: Unexpected error - {e}. Skipping.")
+                        print(f"⚠️  Row {row_number}: Unexpected error - {e}")
+                        print(f"   Row data: {row[:8] if len(row) >= 8 else row}")
                         skipped_rows += 1
                         continue
         
@@ -156,6 +164,12 @@ class QuizLoader:
         if questions:
             print(f"   Categories found: {len(set(q.category for q in questions))}")
             print(f"   Subcategories found: {len(set(q.subcategory for q in questions))}")
+            
+            # Show sample of loaded questions
+            print(f"\n📝 Sample Questions Loaded:")
+            for i, q in enumerate(questions[:3]):  # Show first 3 questions
+                print(f"   {i+1}. {q.category}/{q.subcategory}: {q.question[:50]}...")
+                print(f"      Answer: {q.answer}")
         
         return questions
     
